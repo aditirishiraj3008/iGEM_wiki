@@ -10,10 +10,13 @@ html {
 
 body {
 	padding-top: 10vh;
+	background-color: black;
+	color: whitesmoke;
 }
 
 h1 {
 	text-align: center;
+	padding: 1rem;
 }
 
 .navbar {
@@ -29,6 +32,8 @@ h1 {
 	margin: 0;
 	z-index: 50;
 	transition: transform 0.3s ease-in-out;
+	background-color: black;
+	border-bottom: 1px gray solid;
 }
 
 .navbar a {
@@ -51,7 +56,8 @@ h1 {
 	margin: 0.5vh 1vh;
 	padding: 1vw 1vw;
 	background-color: rgb(230, 230, 230);
-	color: black;
+	color: whitesmoke;
+	background-color: gray;
 	text-decoration: none;
 	border-radius: 2.5vh;
 	/* width: calc(1.5 * max-content); */
