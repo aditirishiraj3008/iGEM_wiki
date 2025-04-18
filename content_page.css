@@ -110,43 +110,34 @@ body {
 
 .heading_slide{
     align-content: center;
-    background-color: black;
     height: 90vh;
     text-align: center;
+    border-bottom: 1px gray solid;
 }
 
 .content-pages{
     top: 10vh;
     z-index: 10;
     padding: 5vh;
-    background-color: rgb(50, 50, 50);
     display: flex;
     position: relative;
 }
 
 aside{
     position: sticky; 
-    top: 20vh;
+    top: 10vh;
     height: max-content;
     left: 1vw;
-    padding: 2vh 4vh;
-    border-radius: 2vh;
-}
-
-aside h3{
-    color: #ffffff;
-    margin-bottom: 1vh;
 }
 
 aside ul li{
     list-style: none;
-    
+    padding: 0.5rem;
 }
 
 aside ul li a{
     text-decoration: none;
-    padding: 3vh;
-    color: white
+    color: white;
 }
 
 aside i{
@@ -154,40 +145,37 @@ aside i{
 }
 
 .textToSpeechBox{
-    background-color: white;
+    background-color: gray;
+    color: white;
     padding: 10px;
+    width: 10vw;
     display: flex;
+    border-radius: 5px;
     justify-content: space-around;
-}
-.menu-toggle i {
-    transition: transform 0.3s ease-in-out;
+    border: 1px #ffffff;
 }
 
 .nav_links.active {
     transform: translateX(0);
 }
 
-aside.active {
-    transform: translateX(0);
-}
-
 .content{
+    background-color: gray;
     padding: 5vh;
+    border-radius: 10px;
     margin-left: 25vh ;
     position: relative;
-    background-color: black;
     transition: margin-left 0.3s ease-in-out;
 }
 
 .content h2{
     color: white;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
 }
 
-p{  
+.content-pages p{  
     color: white;
-    margin: 1.5vh;
-    padding: 2.5vh;
+    margin: 1vh;
     border-radius: 1.5vh;
     margin-bottom: 3vh;
 }
