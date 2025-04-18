@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll("#textToConvert .subsections");
-const convertBtn = document.getElementById("convertBtn");
+const playButton = document.getElementById("playButton");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
@@ -11,23 +11,25 @@ const synth = window.speechSynthesis;
 let voicesReady = false;
 
 // wait for the voices to load
-function loadVoices(callback) {
-    const voices = synth.getVoices();
-    if (voices.length !== 0) {
-        voicesReady = true;
-        callback();
-    } else {
-        synth.addEventListener("voiceschanged", () => {
-            voicesReady = true;
-            callback();
-        });
-    }
-}
+// function loadVoices(callback) {
+//     const voices = synth.getVoices();
+//     if (voices.length !== 0) {
+//         voicesReady = true;
+//         callback();
+//     } else {
+//         synth.addEventListener("voiceschanged", () => {
+//             voicesReady = true;
+//             callback();
+//         });
+//     }
+// }
 
 function getVoice(index = 4) {
     const voices = synth.getVoices();
     return voices.length > index ? voices[index] : voices[0];
 }
+
+
 
 // Speak section
 function speakSection(index) {
@@ -55,27 +57,38 @@ function speakSection(index) {
 }
 
 // Play/pause toggle working
-convertBtn.addEventListener("click", () => {
+playButton.addEventListener("click", () => {
+    console.log("old isPlaying = " + isPlaying);
+    console.log("old isPaused = " + isPaused);
     if (isPlaying && !isPaused) {
         synth.pause();
         isPaused = true;
-        convertBtn.classList.remove("fa-pause");
-        convertBtn.classList.add("fa-play");
-    } else if (isPaused) {
+        playButton.classList.remove("fa-pause");
+        playButton.classList.add("fa-play");
+    } else if (isPlaying && isPaused) {
         synth.resume();
         isPaused = false;
-        convertBtn.classList.remove("fa-play");
-        convertBtn.classList.add("fa-pause");
+        playButton.classList.remove("fa-play");
+        playButton.classList.add("fa-pause");
     } else {
         // Playing from current section
-        loadVoices(() => {
-            isPlaying = true;
+        // loadVoices(() => {
+        //     isPlaying = true;
+        //     isPaused = false;
+        //     playButton.classList.remove("fa-play");
+        //     playButton.classList.add("fa-pause");
+        //     speakSection(currentIndex);
+        //     synth.resume();
+        // });
+        isPlaying = true;
             isPaused = false;
-            convertBtn.classList.remove("fa-play");
-            convertBtn.classList.add("fa-pause");
+            playButton.classList.remove("fa-play");
+            playButton.classList.add("fa-pause");
             speakSection(currentIndex);
-        });
+            synth.resume();
     }
+    console.log("new isPlaying = " + isPlaying);
+    console.log("new isPaused = " + isPaused);
 });
 
 // Next
@@ -85,8 +98,8 @@ nextBtn.addEventListener("click", () => {
         currentIndex++;
         isPaused = false;
         isPlaying = true;
-        convertBtn.classList.remove("fa-play");
-        convertBtn.classList.add("fa-pause");
+        playButton.classList.remove("fa-play");
+        playButton.classList.add("fa-pause");
         speakSection(currentIndex);
     }
 });
@@ -98,8 +111,8 @@ prevBtn.addEventListener("click", () => {
         currentIndex--;
         isPaused = false;
         isPlaying = true;
-        convertBtn.classList.remove("fa-play");
-        convertBtn.classList.add("fa-pause");
+        playButton.classList.remove("fa-play");
+        playButton.classList.add("fa-pause");
         speakSection(currentIndex);
     }
 });
@@ -109,6 +122,6 @@ function stopSpeaking() {
     synth.cancel();
     isPlaying = false;
     isPaused = false;
-    convertBtn.classList.remove("fa-pause");
-    convertBtn.classList.add("fa-play");
+    playButton.classList.remove("fa-pause");
+    playButton.classList.add("fa-play");
 }
