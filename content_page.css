@@ -9,8 +9,8 @@ html {
 }
 
 body {
-	background-color: black;
-	color: whitesmoke;
+	background-color: #F8F3E2;
+	color: #1C130F;
 }
 
 .navbar {
@@ -26,12 +26,12 @@ body {
 	margin: 0;
 	z-index: 50;
 	transition: transform 0.3s ease-in-out;
-	background-color: black;
-	border-bottom: 1px gray solid;
+	background-color: #F8F3E2;
+	border-bottom: 1px #1C130F solid;
 }
 
 .navbar a {
-	color: black;
+	color: #F8F3E2;
 	text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ body {
 	display: block;
 	margin: 0.5vh 1vh;
 	padding: 1vw 1vw;
-	color: whitesmoke;
+	color: #1C130F;
 	text-decoration: none;
 	border-radius: 2.5vh;
 	width: 10rem;
@@ -76,7 +76,7 @@ body {
 }
 
 .dropdown_contents {
-    background-color: black;
+    background-color: #F8F3E2;
 	z-index: 10;
 	display: block;
 	width: max-content;
@@ -112,7 +112,7 @@ body {
     align-content: center;
     height: 90vh;
     text-align: center;
-    border-bottom: 1px gray solid;
+    border-bottom: 1px #1C130F solid;
 }
 
 .content-pages{
@@ -137,7 +137,7 @@ aside ul li{
 
 aside ul li a{
     text-decoration: none;
-    color: white;
+    color: #1C130F;
 }
 
 aside i{
@@ -145,14 +145,14 @@ aside i{
 }
 
 .textToSpeechBox{
-    background-color: gray;
-    color: white;
+    background-color: #F8F3E2;
+    color: 1C130F;
     padding: 10px;
     width: 10vw;
     display: flex;
     border-radius: 5px;
     justify-content: space-around;
-    border: 1px #ffffff;
+    border: 1px #1C130F solid;
 }
 
 .nav_links.active {
@@ -160,21 +160,21 @@ aside i{
 }
 
 .content{
-    background-color: gray;
+    background-color: #F8F3E2;
     padding: 5vh;
     border-radius: 10px;
     margin-left: 25vh ;
     position: relative;
     transition: margin-left 0.3s ease-in-out;
+    border: 1px #1C130F solid;
 }
 
 .content h2{
-    color: white;
+    color: #4F281C;
     margin-bottom: 3vh;
 }
 
 .content-pages p{  
-    color: white;
     margin: 1vh;
     border-radius: 1.5vh;
     margin-bottom: 3vh;
