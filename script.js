@@ -24,7 +24,7 @@ function loadVoices(callback) {
     }
 }
 
-function getVoice(index = 6) {
+function getVoice(index = 4) {
     const voices = synth.getVoices();
     return voices.length > index ? voices[index] : voices[0];
 }
