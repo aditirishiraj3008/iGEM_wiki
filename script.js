@@ -125,3 +125,24 @@ function stopSpeaking() {
     playButton.classList.remove("fa-pause");
     playButton.classList.add("fa-play");
 }
+
+//DARK/LIGHT MODE TOGGLE
+const toggleBtn = document.getElementById("darkToggle");
+const icon = toggleBtn.querySelector("i");
+
+toggleBtn.addEventListener("click", () => {
+    const isDark = document.body.getAttribute("data-theme") === "dark";
+
+    if (isDark) {
+        document.body.setAttribute("data-theme", "light");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-circle");
+        toggleBtn.classList.remove("active");
+    } else {
+        document.body.setAttribute("data-theme", "dark");
+        icon.classList.remove("fa-circle");
+        icon.classList.add("fa-moon");
+        toggleBtn.classList.add("active");
+    }
+});
+
