@@ -9,20 +9,20 @@ html {
 }
 
 :root {
-    --bg-color: #F8F3E2;
-    --text-color: #1C130F;
-	--heading-color: #4F281C;
+	--bg-color: #f8f3e2;
+	--text-color: #1c130f;
+	--heading-color: #4f281c;
 }
 
 body[data-theme="dark"] {
-    --bg-color: #1C130F;
-    --text-color: #F8F3E2;
+	--bg-color: #1c130f;
+	--text-color: #dbd8c0;
 	--heading-color: #aba385;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -39,7 +39,7 @@ body {
 	z-index: 50;
 	transition: transform 0.3s ease-in-out;
 	background-color: var(--bg-color);
-    border-bottom: 1px var(--text-color) solid;
+	border-bottom: 1px var(--text-color) solid;
 }
 
 .navbar a {
@@ -78,7 +78,7 @@ body {
 }
 
 .dropdown_contents {
-    background-color: var(--bg-color);
+	background-color: var(--bg-color);
 	z-index: 10;
 	display: block;
 	width: max-content;
@@ -111,112 +111,111 @@ body {
 }
 
 .dark-toggle {
-    width: 40px;
-    height: 20px;
-    border-radius: 20px;
-    background-color: #ffe100;
-    display: flex;
-    align-items: center;
-    padding: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+	width: 40px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: #ffe100;
+	display: flex;
+	align-items: center;
+	padding: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 .toggle-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s;
-    color: #fdfbb2;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s;
+	color: #fdfbb2;
 }
 
-.toggle-circle i{
+.toggle-circle i {
 	font-size: 14px;
 }
 
 .dark-toggle.active {
-    background-color: #000000;
+	background-color: #000000;
 }
 
 .dark-toggle.active .toggle-circle {
-    transform: translateX(18px);
-    color: #818181;
+	transform: translateX(18px);
+	color: #818181;
 }
 
-
-.heading_slide{
-    align-content: center;
-    height: 90vh;
-    text-align: center;
+.heading_slide {
+	align-content: center;
+	height: 90vh;
+	text-align: center;
 	color: var(--heading-color);
-    border-bottom: 1px var(--bg-color) solid;
+	border-bottom: 1px var(--bg-color) solid;
 }
 
-.content-pages{
-    top: 10vh;
-    z-index: 10;
-    padding: 5vh;
-    display: flex;
-    position: relative;
+.content-pages {
+	top: 10vh;
+	z-index: 10;
+	padding: 5vh;
+	display: flex;
+	position: relative;
 }
 
-aside{
-    position: sticky; 
-    top: 10vh;
-    height: max-content;
-    left: 1vw;
+aside {
+	position: sticky;
+	top: 10vh;
+	height: max-content;
+	left: 1vw;
 }
 
-aside ul li{
-    list-style: none;
-    padding: 0.5rem;
+aside ul li {
+	list-style: none;
+	padding: 0.5rem;
 }
 
-aside ul li a{
+aside ul li a {
 	color: var(--text-color);
-    text-decoration: none;
+	text-decoration: none;
 }
 
-aside i{
-    cursor: pointer;
+aside i {
+	cursor: pointer;
 }
 
-.textToSpeechBox{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 10px;
-    width: 10vw;
-    display: flex;
-    border-radius: 5px;
-    justify-content: space-around;
-    border: 1px var(--text-color) solid;
+.textToSpeechBox {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	padding: 10px;
+	width: 10vw;
+	display: flex;
+	border-radius: 5px;
+	justify-content: space-around;
+	border: 1px var(--text-color) solid;
 }
 
 .nav_links.active {
-    transform: translateX(0);
+	transform: translateX(0);
 }
 
-.content{
-    padding: 5vh;
-    border-radius: 10px;
-    margin-left: 25vh ;
-    position: relative;
-    transition: margin-left 0.3s ease-in-out;
-    border: 1px var(--text-color) solid;
+.content {
+	padding: 5vh;
+	border-radius: 10px;
+	margin-left: 25vh;
+	position: relative;
+	transition: margin-left 0.3s ease-in-out;
+	border: 1px var(--text-color) solid;
 }
 
-.content h2{
+.content h2 {
 	color: var(--heading-color);
-    margin-bottom: 3vh;
+	margin-bottom: 3vh;
 }
 
-.content-pages p{  
-    margin: 1vh;
-    border-radius: 1.5vh;
-    margin-bottom: 3vh;
+.content-pages p {
+	margin: 1vh;
+	border-radius: 1.5vh;
+	margin-bottom: 3vh;
 }
 
 .navbar,
@@ -225,5 +224,6 @@ aside ul li a,
 .textToSpeechBox,
 .content,
 .heading_slide {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	transition: background-color 0.3s ease, color 0.3s ease,
+		border-color 0.3s ease;
 }
