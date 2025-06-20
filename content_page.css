@@ -9,19 +9,19 @@ html {
 }
 
 :root {
-    --bg-color: #F8F3E2;
-    --bg-color2: #efe7cb;
-    --text-color: #1E1612;
-	--heading-color: #4F281C; /* this is not according to neha's color palette*/
-    --accent: #2A8B1A;
+	--bg-color: #f8f3e2;
+	--bg-color2: #efe7cb;
+	--text-color: #1e1612;
+	--heading-color: #4f281c; /* this is not according to neha's color palette*/
+	--accent: #2a8b1a;
 }
 
 body[data-theme="dark"] {
-    --bg-color: #2A211D;
-    --bg-color2: #403028;
-    --text-color: #FFF8DF;
+	--bg-color: #2a211d;
+	--bg-color2: #403028;
+	--text-color: #fff8df;
 	--heading-color: #aba385; /* this is not according to neha's color palette*/
-    --accent: #32A731;
+	--accent: #32a731;
 }
 
 body {
@@ -232,44 +232,44 @@ aside ul li a,
 		border-color 0.3s ease;
 }
 
-footer{
-    position: relative;
-    margin: 30vh 0 0 0;
-    min-height: 550px;
-    background-color: var(--bg-color2);
-    overflow: hidden;
-    clip-path: ellipse(100% 100% at 50% 100%);
-    padding-top: 5vh;
+footer {
+	position: relative;
+	margin: 30vh 0 0 0;
+	min-height: 550px;
+	background-color: var(--bg-color2);
+	overflow: hidden;
+	clip-path: ellipse(100% 100% at 50% 100%);
+	padding-top: 5vh;
 }
 
-.info-container{
-    display: flex;
+.info-container {
+	display: flex;
 }
 
-.contactUs{
-    width: 50vw;
-    padding: 20px 0;
-    margin-bottom: 5vw;
+.contactUs {
+	width: 50vw;
+	padding: 20px 0;
+	margin-bottom: 5vw;
 }
 
-.contactUs h1{
-    text-align: center;
-    padding: 35px 0;
+.contactUs h1 {
+	text-align: center;
+	padding: 35px 0;
 }
 
-.contactUs div{
-    display: flex;
+.contactUs div {
+	display: flex;
 }
 
-.mbm_logo{
-    width: 14vw;
-    height: auto;
-    margin: 0px 50px 0px 20px;
+.mbm_logo {
+	width: 14vw;
+	height: auto;
+	margin: 0px 50px 0px 20px;
 }
 
-.text-and-icons{
-    width: 25vw;
-    flex-direction: column;
+.text-and-icons {
+	width: 25vw;
+	flex-direction: column;
 }
 
 .verticalLine {
@@ -279,68 +279,69 @@ footer{
 }
 
 .socialMedia {
-    padding-top: 5vh;
-    display: flex;
-    justify-content: center; 
-    gap: 2.5rem;
+	padding-top: 5vh;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 3vw;
+	/* gap: 2.5rem; */
 }
 
 .icon {
-  width: 35px;
-  height: 35px;
-  background-color: var(--text-color); 
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
+	width: 35px;
+	height: 35px;
+	background-color: var(--text-color);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	-webkit-mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
 }
 
 /* Set the image source as a mask */
 .insta {
-  -webkit-mask-image: url('../images/insta.png');
-  mask-image: url('../images/insta.png');
+	-webkit-mask-image: url("../images/insta_inverted.png");
+	mask-image: url("../images/insta_inverted.png");
 }
 
 .linkedin {
-  -webkit-mask-image: url('../images/linkedin.png');
-  mask-image: url('../images/linkedin.png');
+	-webkit-mask-image: url("../images/linkedin_inverted.png");
+	mask-image: url("../images/linkedin_inverted.png");
 }
 
 .twitter {
-  -webkit-mask-image: url('../images/twitter.png');
-  mask-image: url('../images/twitter.png');
+	-webkit-mask-image: url("../images/twitter_inverted.png");
+	mask-image: url("../images/twitter_inverted.png");
 }
 
 .website {
-  -webkit-mask-image: url('../images/website.png');
-  mask-image: url('../images/website.png');
+	-webkit-mask-image: url("../images/website_inverted.png");
+	mask-image: url("../images/website_inverted.png");
 }
 
-.sponsors{
-    width: 50vw;
-    padding: 2vw;
+.sponsors {
+	width: 50vw;
+	padding: 2vw;
 }
 
-.sponsors h1{
-    text-align: center;
-    padding: 30px 0;
+.sponsors h1 {
+	text-align: center;
+	padding: 30px 0;
 }
 
-.sponsor_logos{
-    background-color: #efe7cb;
-    border-radius: 5px;
-    height: fit-content;
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    flex-wrap: wrap;        
+.sponsor_logos {
+	background-color: #efe7cb;
+	border-radius: 5px;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-.sponsor_logos img{
-    width: 15vw;
-    padding: 10px;
+.sponsor_logos img {
+	width: 15vw;
+	padding: 10px;
 }
 
 /* .rounded-edge {
@@ -351,20 +352,20 @@ footer{
 } */
 
 .street-light {
-    position: absolute;
-    bottom: 39px;
-    width: 150px;
-    z-index: 1;
-    right: 15px;
+	position: absolute;
+	bottom: 39px;
+	width: 150px;
+	z-index: 1;
+	right: 15px;
 }
 
 .auto {
-    position: absolute;
-    bottom: 50px;
-    width: 80px;
-    right: 100px;
-    /* animation: truckMove 10s linear forwards infinite; */
-    z-index: 2;
+	position: absolute;
+	bottom: 50px;
+	width: 80px;
+	right: 100px;
+	/* animation: truckMove 10s linear forwards infinite; */
+	z-index: 2;
 }
 
 /* @keyframes autoMove {
@@ -376,66 +377,66 @@ footer{
     }
 } */
 
-.truck{
-    position: absolute;
-    animation: truckMove 15s linear forwards infinite;
-    animation-play-state: running;
-    z-index: 3;
-    cursor: pointer;
-    bottom: 45px; 
+.truck {
+	position: absolute;
+	animation: truckMove 15s linear forwards infinite;
+	animation-play-state: running;
+	z-index: 3;
+	cursor: pointer;
+	bottom: 45px;
 }
 
-.truck img{
-    width: 150px;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+.truck img {
+	width: 150px;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.truck .msg{
-    display: none;
-    position: relative;
-    left: 100px;
-    top: 45px;
-    color: #1E1612;
-    font-size: small;
-    z-index: 3;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+.truck .msg {
+	display: none;
+	position: relative;
+	left: 100px;
+	top: 45px;
+	color: #1e1612;
+	font-size: small;
+	z-index: 3;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.truck .msg p{
-    position: relative;
-    top: -60px;
-    left: 25px;
+.truck .msg p {
+	position: relative;
+	top: -60px;
+	left: 25px;
 }
 
-.clickMe{
-    background-color: #eae68d;
-    width: fit-content;
-    padding: 3px;
-    border-radius: 2px;
-    font-size: smaller;
-    position: relative;
-    top: 55px;
-    left: 23px;
-    color: #1E1612;
+.clickMe {
+	background-color: #eae68d;
+	width: fit-content;
+	padding: 3px;
+	border-radius: 2px;
+	font-size: smaller;
+	position: relative;
+	top: 55px;
+	left: 23px;
+	color: #1e1612;
 }
 
 @keyframes truckMove {
-    0% {
-        left: -120px;
-    }
-    100% {
-        left: 100%;
-    }
+	0% {
+		left: -120px;
+	}
+	100% {
+		left: 100%;
+	}
 }
 
-.copyright{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    height: 50px;
-    background-color: #0c6262;
-    font-size: smaller;
-    color: #cffecf;
+.copyright {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	height: 50px;
+	background-color: #0c6262;
+	font-size: smaller;
+	color: #cffecf;
 }
