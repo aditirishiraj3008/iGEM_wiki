@@ -10,7 +10,7 @@ html {
 
 :root {
     --bg-color: #F8F3E2;
-    --bg-color2: #E3DECD;
+    --bg-color2: #fffdf5;
     --text-color: #1E1612;
 	--heading-color: #4F281C; /* this is not according to neha's color palette*/
     --accent: #2A8B1A;
@@ -329,7 +329,7 @@ footer{
 }
 
 .sponsor_logos{
-    background-color: #E3DECD;
+    background-color: #fffdf5;
     border-radius: 5px;
     height: fit-content;
     display: flex;
