@@ -157,7 +157,14 @@
             </div>
             <div class="rounded-edge">
                     <img src="../images/light_off.png" alt="street-light" class="street-light light-off">
-                    <img src="../images/truck.png" alt="truck" class="truck">
+                    <div class="truck">
+                        <div class="msg">
+                            <img src="../images/truck-msg.png" alt="message">
+                            <p>I LOVEEE MBM!!</p>
+                        </div>
+                        <div class="clickMe">Click me!</div>
+                        <img src="../images/truck.png" alt="truck">
+                    </div>
                     <img src="../images/auto.png" alt="auto" class="auto">
                 </div>
             <div class="copyright">
@@ -167,12 +174,16 @@
             </div>
         </footer>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
+           document.addEventListener("DOMContentLoaded", function () {
                 const truck = document.querySelector(".truck");
+                const msg = document.querySelector(".msg"); // target the message element
 
                 truck.addEventListener("click", () => {
                     const isPaused = getComputedStyle(truck).animationPlayState === "paused";
                     truck.style.animationPlayState = isPaused ? "running" : "paused";
+
+                    // Show the message only when paused
+                    msg.style.display = isPaused ? "none" : "block";
                 });
             });
         </script>

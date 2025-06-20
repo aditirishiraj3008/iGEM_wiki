@@ -282,7 +282,7 @@ footer{
     padding-top: 5vh;
     display: flex;
     justify-content: center; 
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .icon {
@@ -367,23 +367,55 @@ footer{
     z-index: 2;
 }
 
-@keyframes autoMove {
+/* @keyframes autoMove {
     0% {
         left: -120px;
     }
     100% {
         left: 100%;
     }
-}
+} */
 
 .truck{
     position: absolute;
-    bottom: 50px; 
-    width: 150px;
-    animation: truckMove 10s linear forwards infinite;
+    animation: truckMove 15s linear forwards infinite;
     animation-play-state: running;
     z-index: 3;
     cursor: pointer;
+    bottom: 45px; 
+}
+
+.truck img{
+    width: 150px;
+}
+
+.truck .msg{
+    display: none;
+    position: relative;
+    left: 100px;
+    top: 45px;
+    color: #1E1612;
+    font-size: small;
+    z-index: 3;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.truck .msg p{
+    position: relative;
+    top: -60px;
+    left: 25px;
+}
+
+.clickMe{
+    background-color: #eae68d;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: smaller;
+    position: relative;
+    top: 55px;
+    left: 23px;
+    color: #1E1612;
 }
 
 @keyframes truckMove {
