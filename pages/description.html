@@ -166,6 +166,16 @@
                 The repository used to create this website is available at gitlab.igem.org/2025/mit-mahe.
             </div>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const truck = document.querySelector(".truck");
+
+                truck.addEventListener("click", () => {
+                    const isPaused = getComputedStyle(truck).animationPlayState === "paused";
+                    truck.style.animationPlayState = isPaused ? "running" : "paused";
+                });
+            });
+        </script>
         <script src="../script.js"></script>
     </body>
 </html>
