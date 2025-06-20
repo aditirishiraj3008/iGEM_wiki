@@ -235,9 +235,11 @@ aside ul li a,
 footer{
     position: relative;
     margin: 30vh 0 0 0;
-    min-height: 450px;
+    min-height: 550px;
     background-color: var(--bg-color2);
     overflow: hidden;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    padding-top: 5vh;
 }
 
 .info-container{
@@ -245,23 +247,29 @@ footer{
 }
 
 .contactUs{
-    width: 45vw;
-    padding: 5vw;
+    width: 50vw;
+    padding: 20px 0;
+    margin-bottom: 5vw;
 }
 
 .contactUs h1{
     text-align: center;
-    padding-bottom: 20px;
+    padding: 35px 0;
 }
 
-.sponsors{
-    width: 50vw;
-    padding: 5vw;
+.contactUs div{
+    display: flex;
 }
 
-.sponsors h1{
-    text-align: center;
-    padding-bottom: 20px;
+.mbm_logo{
+    width: 14vw;
+    height: auto;
+    margin: 0px 50px 0px 20px;
+}
+
+.text-and-icons{
+    width: 25vw;
+    flex-direction: column;
 }
 
 .verticalLine {
@@ -274,12 +282,12 @@ footer{
     padding-top: 5vh;
     display: flex;
     justify-content: center; 
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: var(--text-color); 
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -305,37 +313,81 @@ footer{
   mask-image: url('../images/twitter.png');
 }
 
-@keyframes scooterMove {
+.website {
+  -webkit-mask-image: url('../images/website.png');
+  mask-image: url('../images/website.png');
+}
+
+.sponsors{
+    width: 50vw;
+    padding: 2vw;
+}
+
+.sponsors h1{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.sponsor_logos{
+    background-color: #E3DECD;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;        
+}
+
+.sponsor_logos img{
+    width: 15vw;
+    padding: 10px;
+}
+
+/* .rounded-edge {
+    height: 200px;
+    width: 100%;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    background: linear-gradient(var(--bg-color2), var(--bg-color1));
+} */
+
+.street-light {
+    position: absolute;
+    bottom: 39px;
+    width: 150px;
+    z-index: 1;
+}
+
+@keyframes truckMove {
     0% {
-        right: -120px;
+        left: -120px;
     }
     100% {
-        right: 100%;
+        left: 100%;
     }
 }
 
-.scooter {
+.truck {
     position: absolute;
     bottom: 50px;
-    width: 100px;
-    animation: scooterMove 6s linear forwards infinite;
+    width: 150px;
+    animation: truckMove 10s linear forwards infinite;
     z-index: 3;
 }
 
 @keyframes autoMove {
     0% {
-        right: -120px;
+        left: -120px;
     }
     100% {
-        right: 100%;
+        left: 100%;
     }
 }
 
 .auto{
     position: absolute;
     bottom: 50px; 
-    width: 170px;
-    animation: autoMove 10s linear forwards infinite;
+    width: 80px;
+    animation: autoMove 8s linear forwards infinite;
     z-index: 2;
 }
 
@@ -348,5 +400,5 @@ footer{
     height: 50px;
     background-color: var(--accent);
     font-size: smaller;
-    color: #b0eca6;
+    color: #b5e6b4;
 }
