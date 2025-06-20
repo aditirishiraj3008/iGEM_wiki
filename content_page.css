@@ -387,6 +387,7 @@ footer{
 
 .truck img{
     width: 150px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .truck .msg{
