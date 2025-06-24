@@ -281,9 +281,9 @@ footer {
 .socialMedia {
 	padding-top: 5vh;
 	display: flex;
-	justify-content: space-evenly;
-	/* padding-right: 3vw; */
-	gap: 1rem;
+	justify-content: space-between;
+	padding-right: 3vw;
+	/* gap: 1rem; */
 }
 
 .icon {
@@ -337,11 +337,12 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .sponsor_logos img {
-	width: 15vw;
-	padding: 10px;
+	width: 14vw;
+	padding: 2vh 2vw;
 }
 
 /* .rounded-edge {
