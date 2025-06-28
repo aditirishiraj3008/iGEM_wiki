@@ -300,23 +300,23 @@ footer {
 
 /* Set the image source as a mask */
 .insta {
-	-webkit-mask-image: url("../images/insta_inverted.png");
-	mask-image: url("../images/insta_inverted.png");
+	-webkit-mask-image: url("../images/insta.png");
+	mask-image: url("../images/insta.png");
 }
 
 .linkedin {
-	-webkit-mask-image: url("../images/linkedin_inverted.png");
-	mask-image: url("../images/linkedin_inverted.png");
+	-webkit-mask-image: url("../images/linkedin.png");
+	mask-image: url("../images/linkedin.png");
 }
 
 .twitter {
-	-webkit-mask-image: url("../images/twitter_inverted.png");
-	mask-image: url("../images/twitter_inverted.png");
+	-webkit-mask-image: url("../images/twitter.png");
+	mask-image: url("../images/twitter.png");
 }
 
-.website {
-	-webkit-mask-image: url("../images/website_inverted.png");
-	mask-image: url("../images/website_inverted.png");
+.linktree {
+	-webkit-mask-image: url("../images/linktree.svg");
+	mask-image: url("../images/linktree.svg");
 }
 
 .sponsors {
